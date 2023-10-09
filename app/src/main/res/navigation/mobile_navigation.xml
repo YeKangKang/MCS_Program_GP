@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_trophy_room">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_trophy_room"
         android:name="com.example.carbonfootprintapp.ui.home.HomeFragment"
         android:label="@string/trophy_room"
         tools:layout="@layout/fragment_trophy_room" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_map"
         android:name="com.example.carbonfootprintapp.ui.dashboard.DashboardFragment"
         android:label="@string/map"
         tools:layout="@layout/fragment_map" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_daily_rank"
         android:name="com.example.carbonfootprintapp.ui.notifications.NotificationsFragment"
         android:label="@string/daily_rank"
         tools:layout="@layout/fragment_daily_rank" />
