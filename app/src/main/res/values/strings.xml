@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CarbonFootprintApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="trophy_room">Trophy Room</string>
+    <string name="map">Map</string>
+    <string name="daily_rank">Daily Rank</string>
 </resources>
