@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login_activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_light_primary"
+        app:title="Log-in"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/ic_launcher" />
+
+<!--    username用户名-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_supervisor_account_24" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Please Input You Username"
+            android:inputType="textNoSuggestions"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<!--    password密码-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_lock_open_24" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Please Input You Password"
+            android:inputType="textPassword"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_margin="16dp"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an Account?"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/hyper_link"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
