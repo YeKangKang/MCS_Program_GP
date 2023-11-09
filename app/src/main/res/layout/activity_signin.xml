@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_light_primary"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_24"
+        app:title="Sign-in"
+        app:titleTextColor="@color/white" />
+
+    <FrameLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle_shape">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+    </FrameLayout>
+
+    <!--    username用户名-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_user" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Username"
+            android:inputType="textNoSuggestions"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    email-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Email"
+            android:inputType="textNoSuggestions"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <!--    password密码-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_lock" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    double check二次确认-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_repeat" />
+
+        <EditText
+            android:id="@+id/double_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Input Password Again"
+            android:inputType="textPassword"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    double check二次确认 Refuse to reveal-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_gender" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Please select gender"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginRight="26dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/radioRefuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refuse to reveal"
+            android:textSize="14sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_margin="16dp"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
