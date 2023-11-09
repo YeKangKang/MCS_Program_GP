@@ -7,7 +7,7 @@ How to compile the code and get the APK file (We've created an apk file in the z
 2-Select 'APK'-'Next'  
 3-In the 'Key Store path' line, select 'Choose existing...', and select 'the directory where you unzipped the code/MCS_ Program_GP-final/key.keystore' - 'open'  
 4-Then enter the following:  
-Key Store password- sensor123  
+Key Store password- sensor123 (If the system auto-populates, no changes are necessary)  
 Key alias- sensor  
 Key password- sensor123  
 5-Select remember password - ‘next’  
