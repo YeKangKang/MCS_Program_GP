@@ -101,7 +101,7 @@
             android:layout_gravity="center_vertical"
             android:gravity="center"
             android:textColor="@color/hyper_link"
-            android:text="Total carbon emissions: 0.0kg"
+            android:text="Total carbon saved: 0.0kg"
             android:textSize="23sp"/>
 
     </androidx.cardview.widget.CardView>
