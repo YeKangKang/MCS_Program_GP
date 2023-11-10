@@ -57,7 +57,7 @@ class HomeFragment : Fragment() {
         super.onResume()
         val loginUser = UsersDatabase.getInstance(requireContext()).getLoginUser()
         loginUser.let {
-            binding.totalCarbon.text = "Total carbon emissions: ${it.totalEnergy}kg"
+            binding.totalCarbon.text = "Total carbon saved: ${it.totalEnergy}kg"
         }
     }
 
